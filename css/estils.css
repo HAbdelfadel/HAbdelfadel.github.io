@@ -29,54 +29,41 @@ header h4 a {
     color: white;
 }
 
-/* MENU NUEVO */
+/* MENU */
 
 nav {
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul {
-
-    list-style: none;
-
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    padding: 0;
+    list-style-type: none;
     margin: 0;
-
-    flex-wrap: wrap;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav li {
-    width: auto;
+    float: left;
+    width: 16.66%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
 
     background-color: #6a0dad;
 
-    color: white;
-
-    padding: 15px 25px;
-
-    border-radius: 20px;
-
-    text-decoration: none;
-
-    display: block;
-
-    font-size: 20px;
-
-    transition: 0.3s;
+    border-radius: 15px;
 }
 
 nav li a:hover {
-
     background-color: #4b0082;
-
-    transform: translateY(-3px);
 }
 
 .active {
