@@ -31,29 +31,29 @@ header h4 a {
 
 /* MENU */
 
-nav {
-    padding: 10px;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
 }
 
 nav li {
     float: left;
     width: 16.66%;
-    padding: 5px;
     box-sizing: border-box;
+    padding: 5px;
 }
 
 nav li a {
+
     display: block;
+
     color: white;
     text-align: center;
+
     padding: 15px;
+
     text-decoration: none;
     font-size: 20px;
 
@@ -103,6 +103,20 @@ li {
     font-size: 18px;
 }
 
+/* TABLAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 2px solid #6a0dad;
+    padding: 10px;
+}
+
 /* FOOTER */
 
 footer {
@@ -121,9 +135,8 @@ footer {
         flex: 100%;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    nav li {
+        width: 100%;
     }
 
     header h2 {
