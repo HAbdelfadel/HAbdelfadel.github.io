@@ -1,8 +1,10 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-family: Arial;
-    background-color: #e7d4ff;
+    background-color: #d9c2ff;
 }
+
+/* HEADER */
 
 header {
     background-image: url("../img/background.jpg");
@@ -14,16 +16,20 @@ header {
 }
 
 header h2 {
-    font-size: 70px;
-    text-shadow: 3px 3px 5px black;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header h4 {
+    text-align: right;
+    margin: 0;
 }
 
 header h4 a {
     color: white;
-    text-decoration: underline;
-    float: right;
-    font-size: 20px;
 }
+
+/* MENU */
 
 nav ul {
     list-style-type: none;
@@ -31,7 +37,6 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #6a0dad;
-    border: 2px solid #3d0066;
 }
 
 nav li {
@@ -56,10 +61,7 @@ nav li a:hover {
     background-color: #4b0082;
 }
 
-section {
-    background-color: #d9b3ff;
-    min-height: 500px;
-}
+/* CONTENIDO */
 
 article {
     padding: 30px;
@@ -78,23 +80,21 @@ article {
 
 .columna img {
     width: 100%;
+    border-radius: 10px;
 }
+
+/* TEXTOS */
 
 h3 {
     font-size: 35px;
 }
 
-p, li {
+p,
+li {
     font-size: 18px;
 }
 
-footer {
-    background-color: #2b003d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 20px;
-}
+/* TABLAS */
 
 table {
     width: 100%;
@@ -102,10 +102,23 @@ table {
     background-color: white;
 }
 
-th, td {
+th,
+td {
     border: 2px solid #6a0dad;
     padding: 10px;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #2d004d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
 
 @media screen and (max-width: 800px) {
 
