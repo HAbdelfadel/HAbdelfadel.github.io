@@ -1,137 +1,45 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #d9c2ff;
-}
-
-/* HEADER */
-
-header {
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 80px;
-    text-align: center;
-    color: white;
-}
-
-header h2 {
-    font-size: 60px;
-    text-shadow: 2px 2px 5px black;
-}
-
-header h4 {
-    text-align: right;
-    margin: 0;
-}
-
-header h4 a {
-    color: white;
-}
-
 /* MENU */
+
+nav {
+    padding: 15px;
+}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #6a0dad;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav li {
-    float: left;
-    width: 16.66%;
+    width: auto;
 }
 
 nav li a {
+
     display: block;
+
+    background-color: #6a0dad;
     color: white;
-    text-align: center;
-    padding: 15px;
+
+    padding: 15px 30px;
+
     text-decoration: none;
     font-size: 20px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
 }
 
 nav li a:hover {
     background-color: #4b0082;
+    transform: scale(1.05);
 }
 
 .active {
     background-color: #4b0082;
-}
-
-/* CONTENIDO */
-
-article {
-    padding: 30px;
-}
-
-.fila {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.columna {
-    flex: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.columna img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* TEXTOS */
-
-h3 {
-    font-size: 35px;
-}
-
-p,
-li {
-    font-size: 18px;
-}
-
-/* TABLAS */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-th,
-td {
-    border: 2px solid #6a0dad;
-    padding: 10px;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #2d004d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 800px) {
-
-    .columna {
-        flex: 100%;
-    }
-
-    nav li {
-        width: 100%;
-    }
-
-    header h2 {
-        font-size: 40px;
-    }
-
 }
